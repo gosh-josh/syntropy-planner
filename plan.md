@@ -23,7 +23,7 @@
 
 ## Potential pitfalls:
 
-- Chunk 2 - speciesi must be good. Not LLM gemerated. backbone of the app
+- Chunk 2 - speciesi must be good. Not LLM generated. backbone of the app
 - Chunk 4 - claude outputs being sloppy will be problematic. need strict format and species json. (bad build-time output = bad cached plan that ships)
 - Chunk 7 (v1.1) - need rate limiting to prevent API spend
 - Chunk 7 (v1.1) - 10s Vercel hobby-tier timeout. Haiku 4.5 stays under it (~2-4s), but a schema-fail retry doubles worst case.

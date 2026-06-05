@@ -8,8 +8,8 @@ Particularly targetted to Bolivia, Guatemala, and/or Peru (since I know these we
 
 ## Inputs
 
-- Climate zone : humid tropical. dry tropical. subtropical highland
-- Primary goal : food production. soil regeneration. cash crops
+- Climate zone: humid tropical. dry tropical. subtropical highland
+- Primary goal: food production. soil regeneration. cash crops
 
 ## Output (one page)
 
@@ -26,7 +26,7 @@ Vite + React + TypeScript + Tailwind. Vercel. Anthropic SDK with Haiku 4.5. Stat
 
 ## In scope
 
-- 9 plan variants (3x3).
+- 9 plan variants originaly (3 zones x 3 goals).
 - Spanish toggle (species + layer labels)
 - single page
 - mobile-first reactive front end (many farm users are mobile)
