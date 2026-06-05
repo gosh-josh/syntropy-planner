@@ -76,3 +76,49 @@ export interface Species {
 }
 
 export type SpeciesDB = Species[]
+
+// --- Plans (the build-script output, chunk 4) ---
+//
+// One plan = one {zone, goal} variant. Nine of them are generated at build time
+// by scripts/build-plans.ts and committed as static JSON under src/data/plans/.
+// The frontend (chunk 5) imports the right file by `{zone}_{goal}` and never
+// calls an API at runtime.
+//
+// Species are referenced by `id` only — never by free text — so a plan can only
+// ever point at curated entries in species.json. That's the guardrail against
+// Claude inventing species (see plan.md pitfall on chunk 4).
+
+/** One canopy card's worth of a plan. */
+export interface PlanLayer {
+  /**
+   * Curated species in this layer, by `Species.id`. Each id must exist in
+   * species.json, sit in *this* layer, and be valid for the plan's zone.
+   * Targets 3–8 per the spec, but a layer is capped by what the DB actually
+   * offers for the zone (e.g. emergent species are few), so a thin layer with
+   * fewer than 3 is legitimate rather than a generation failure.
+   */
+  species_ids: string[]
+  /**
+   * How to manage pruning across this layer for the given zone/goal, bilingual
+   * to feed the Spanish toggle. Generated prose, constrained to the species the
+   * plan actually picked — not a free-text species channel.
+   */
+  pruning_notes: { en: string; es: string }
+}
+
+/** One generated {zone, goal} plan: the four canopy cards plus provenance. */
+export interface Plan {
+  zone: Zone
+  goal: GoalTag
+  /** Every layer is present; order is the canopy order in LAYERS. */
+  layers: Record<Layer, PlanLayer>
+  /** Build-time provenance — which model produced this and when. */
+  meta: {
+    model: string
+    /** ISO 8601 timestamp of generation. */
+    generated_at: string
+  }
+}
+
+/** Canonical basename (without extension) for a plan file: `{zone}_{goal}`. */
+export const planKey = (zone: Zone, goal: GoalTag): string => `${zone}_${goal}`

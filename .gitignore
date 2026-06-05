@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Local secrets — ANTHROPIC_API_KEY for the build script (chunk 4), never deployed
+.env
+.env.*
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "validate:species": "node scripts/validate-species.ts"
+    "validate:species": "node scripts/validate-species.ts",
+    "build:plans": "node --env-file-if-exists=.env scripts/build-plans.ts"
   },
   "dependencies": {
     "react": "^19.2.6",
