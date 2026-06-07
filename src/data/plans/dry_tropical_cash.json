@@ -1,0 +1,55 @@
+{
+  "zone": "dry_tropical",
+  "goal": "cash",
+  "layers": {
+    "emergent": {
+      "species_ids": [
+        "cordia-laurel",
+        "cedrela-cedro"
+      ],
+      "pruning_notes": {
+        "en": "Formative pruning only, dry season Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "Formative pruning only, dry season Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    },
+    "high": {
+      "species_ids": [
+        "mangifera-mango",
+        "citrus-orange"
+      ],
+      "pruning_notes": {
+        "en": "Just after fruiting, before the next flush After harvest; remove deadwood and water-shoots Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "Just after fruiting, before the next flush After harvest; remove deadwood and water-shoots Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    },
+    "medium": {
+      "species_ids": [
+        "carica-papaya",
+        "psidium-guava",
+        "cnidoscolus-chaya"
+      ],
+      "pruning_notes": {
+        "en": "n/a (not pruned; replace every 2-3 years) After fruiting; cut back hard to control size and renew wood Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "n/a (not pruned; replace every 2-3 years) After fruiting; cut back hard to control size and renew wood Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    },
+    "low": {
+      "species_ids": [
+        "manihot-cassava",
+        "cajanus-pigeonpea",
+        "ananas-pineapple",
+        "ipomoea-sweetpotato",
+        "phaseolus-bean",
+        "opuntia-tuna"
+      ],
+      "pruning_notes": {
+        "en": "n/a (harvested whole at 8-18 months) Cut back to ~50 cm to rejuvenate; chop-and-drop prunings Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "n/a (harvested whole at 8-18 months) Cut back to ~50 cm to rejuvenate; chop-and-drop prunings Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    }
+  },
+  "meta": {
+    "model": "claude-opus-4-8 (generated locally)",
+    "generated_at": "2026-06-07T14:57:32.202Z"
+  }
+}

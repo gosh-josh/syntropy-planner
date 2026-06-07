@@ -1,0 +1,49 @@
+{
+  "zone": "subtropical_highland",
+  "goal": "cash",
+  "layers": {
+    "emergent": {
+      "species_ids": [
+        "erythrina-poro"
+      ],
+      "pruning_notes": {
+        "en": "Pollard at start of dry season; can re-pollard mid-year Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "Pollard at start of dry season; can re-pollard mid-year Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    },
+    "high": {
+      "species_ids": [
+        "persea-avocado",
+        "inga-edulis",
+        "citrus-orange"
+      ],
+      "pruning_notes": {
+        "en": "Pollard 1-2x per year, into the dry season After harvest; thin to keep light in the canopy Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "Pollard 1-2x per year, into the dry season After harvest; thin to keep light in the canopy Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    },
+    "medium": {
+      "species_ids": [
+        "coffea-arabica"
+      ],
+      "pruning_notes": {
+        "en": "After harvest; stump/renew on a multi-year cycle Monitor canopy health and light penetration to layers below. Remove deadwood and competing growth as needed for system vigor.",
+        "es": "After harvest; stump/renew on a multi-year cycle Monitorear la salud del dosel y la penetración de luz a las capas inferiores. Eliminar madera muerta y crecimiento competidor según sea necesario para el vigor del sistema."
+      }
+    },
+    "low": {
+      "species_ids": [
+        "phaseolus-bean",
+        "opuntia-tuna"
+      ],
+      "pruning_notes": {
+        "en": "The low layer consists of annuals, root crops, and replacement plants. Manage for continuous succession and harvest rather than annual pruning.",
+        "es": "La capa low consta de plantas anuales, tubérculos y plantas de reemplazo. Manejar para sucesión continua y cosecha en lugar de poda anual."
+      }
+    }
+  },
+  "meta": {
+    "model": "claude-opus-4-8 (generated locally)",
+    "generated_at": "2026-06-07T14:57:32.203Z"
+  }
+}
